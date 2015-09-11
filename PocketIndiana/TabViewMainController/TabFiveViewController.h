@@ -10,4 +10,9 @@
 
 @interface TabFiveViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIView *userImageView;
+- (IBAction)loginOnclick:(id)sender;
+- (IBAction)registOnclick:(id)sender;
+
 @end

@@ -35,5 +35,6 @@
 
 @property (weak, nonatomic) id<TabDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIView *mainView;
+-(void)selectNum:(NSInteger) index;
 
 @end

@@ -8,8 +8,13 @@
 
 #import "TabFourViewController.h"
 #import "TabFourCell.h"
+#import "FourModel.h"
+#import "MainViewController.h"
 
-@interface TabFourViewController ()
+@interface TabFourViewController ()<UITextFieldDelegate,TabFourCellDelegate>{
+    NSMutableArray *data;
+    NSInteger maxnum;
+}
 
 @end
 
@@ -18,8 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
+    data = [NSMutableArray new];
     //增加监听，当键盘出现或改变时收出消息
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
@@ -31,6 +35,17 @@
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+    [self initData];
+}
+
+-(void)initData{
+    for (int i = 0; i<10 ; i++) {
+        FourModel *model = [FourModel new];
+        model.num = 10 + i;
+        [data addObject:model];
+    }
+    [_tableView reloadData];
+    [self RefreshData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,7 +55,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return [data count];
     
 }
 
@@ -50,12 +65,38 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     static NSString *identifier = @"TabFourCell";
     TabFourCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.textfield.delegate = self;
+    cell.textfield.tag = 100 + indexPath.row;
+    FourModel *model = [data objectAtIndex:indexPath.row];
+    cell.model = model;
+    cell.index = indexPath.row;
+    cell.delegate = self;
         
     return cell;
     
+}
+
+-(void)removeBack:(NSInteger)index{
+    [data removeObjectAtIndex:index];
+    [_tableView reloadData];
+    [self RefreshData];
+}
+
+-(void)RefreshData{
+    maxnum = 0;
+    for (FourModel *info in  data) {
+        maxnum += info.num;
+    }
+    _maxNumLab.text = [NSString stringWithFormat:@"￥%ld",maxnum];
+    if (maxnum > 0) {
+        _payView.hidden = NO;
+        _bgView.hidden = YES;
+    }else{
+        _payView.hidden = YES;
+        _bgView.hidden = NO;
+    }
 }
 
 /*
@@ -82,19 +123,38 @@
     NSValue *aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect keyboardRect = [aValue CGRectValue];
     int height = keyboardRect.size.height;
-//    [UIView animateWithDuration:0.3 animations:^{
-//        _showView.frame = CGRectMake(_showView.frame.origin.x, _showView.frame.origin.y - height - 44, _showView.frame.size.width, _showView.frame.size.height);
-//    }];
+    [UIView animateWithDuration:0.3 animations:^{
+        _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y - height - _bottomView.frame.size.height, _bottomView.frame.size.width, _bottomView.frame.size.height);
+    }];
 }
 
 //当键退出时调用
 - (void)keyboardWillHide:(NSNotification *)aNotification
 {
-//    [UIView animateWithDuration:0.3 animations:^{
-//        _showView.frame = CGRectMake(_showView.frame.origin.x, self.view.frame.size.height, _showView.frame.size.width, _showView.frame.size.height);
-//    }];
+    [UIView animateWithDuration:0.3 animations:^{
+        _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, self.view.frame.size.height, _bottomView.frame.size.width, _bottomView.frame.size.height);
+    }];
 }
 
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+
+}
+
+
+- (IBAction)editsureOnclick:(id)sender {
+    [self.view endEditing:NO];
+}
+
+
+- (IBAction)moveOnclick:(id)sender {
+    MainViewController *main = (MainViewController *)self.tabBarController;
+    [main MainselectNum:0];
+}
 
 @end

@@ -11,4 +11,6 @@
 
 @interface MainViewController : UITabBarController
 
+-(void)MainselectNum:(NSInteger)num;
+
 @end

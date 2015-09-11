@@ -46,10 +46,17 @@
     
     UIView *righttview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 72, 24)];
     UIButton *rightbtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 0, 72, 24)];
+    [rightbtn addTarget:self action:@selector(gonggaoOnClick) forControlEvents:UIControlEventTouchUpInside];
     [rightbtn setImage:[UIImage imageNamed:@"gonggao"] forState:UIControlStateNormal];
     [rightbtn setImage:[UIImage imageNamed:@"gonggao_s"] forState:UIControlStateHighlighted];
     [righttview addSubview:rightbtn];
     right = [[UIBarButtonItem alloc] initWithCustomView:righttview];
+    
+    UIButton *fivebtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [fivebtn setTitle:@"更多" forState:UIControlStateNormal];
+    fivebtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [fivebtn addTarget:self action:@selector(moreOnclick) forControlEvents:UIControlEventTouchUpInside];
+    right_five = [[UIBarButtonItem alloc] initWithCustomView:fivebtn];
     
     labview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     titlelab = [[UILabel alloc] initWithFrame:labview.frame];
@@ -59,9 +66,6 @@
     [labview addSubview:titlelab];
     
     [self OnClickNum:0];
-    
-    
-    
 }
 
 
@@ -70,6 +74,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)MainselectNum:(NSInteger)num{
+    [tabview selectNum:num];
 }
 
 -(void)OnClickNum:(NSInteger)num{
@@ -91,8 +99,17 @@
     }else if (num == 4){
         titlelab.text = @"个人中心";
         self.navigationItem.titleView = labview;
+        self.navigationItem.rightBarButtonItem = right_five;
     }
     self.selectedIndex = num;
+}
+
+-(void)gonggaoOnClick{
+    
+}
+
+-(void)moreOnclick{
+    
 }
 
 /*

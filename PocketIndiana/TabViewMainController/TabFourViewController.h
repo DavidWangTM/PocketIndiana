@@ -12,5 +12,11 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *maxNumLab;
 - (IBAction)payOnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *payBtn;
+@property (weak, nonatomic) IBOutlet UIView *payView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
+- (IBAction)editsureOnclick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+- (IBAction)moveOnclick:(id)sender;
 @end

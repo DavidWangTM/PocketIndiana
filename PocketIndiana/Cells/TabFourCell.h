@@ -7,6 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FourModel.h"
+
+@protocol TabFourCellDelegate <NSObject>
+
+-(void)removeBack:(NSInteger) index;
+-(void)RefreshData;
+
+@end
 
 @interface TabFourCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *showImage;
@@ -16,5 +24,9 @@
 - (IBAction)addOnclick:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 - (IBAction)delOnclick:(id)sender;
+
+@property (strong ,nonatomic) FourModel *model;
+@property NSInteger index;
+@property (weak ,nonatomic) id<TabFourCellDelegate> delegate;
 
 @end
