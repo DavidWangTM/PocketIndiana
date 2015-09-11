@@ -10,4 +10,7 @@
 
 @interface TabFourViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *maxNumLab;
+- (IBAction)payOnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end

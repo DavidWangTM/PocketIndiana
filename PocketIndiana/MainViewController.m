@@ -13,6 +13,7 @@
     TabViews *tabview;
     UIBarButtonItem *left;
     UIBarButtonItem *right;
+    UIBarButtonItem *right_five;
     UILabel *titlelab;
     UIView *labview;
 }
@@ -58,6 +59,9 @@
     [labview addSubview:titlelab];
     
     [self OnClickNum:0];
+    
+    
+    
 }
 
 

@@ -32,6 +32,7 @@
 		2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C23E1BA2B64A0029E00A /* TabTwoMenuCell.m */; };
 		2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2411BA2B6570029E00A /* TabTwoCell.m */; };
 		2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C27E1BA2C4B30029E00A /* TabThreeCell.m */; };
+		2173C2821BA2D77B0029E00A /* TabFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2811BA2D77B0029E00A /* TabFourCell.m */; };
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		2173C2411BA2B6570029E00A /* TabTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTwoCell.m; sourceTree = "<group>"; };
 		2173C27D1BA2C4B30029E00A /* TabThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabThreeCell.h; sourceTree = "<group>"; };
 		2173C27E1BA2C4B30029E00A /* TabThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabThreeCell.m; sourceTree = "<group>"; };
+		2173C2801BA2D77B0029E00A /* TabFourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFourCell.h; sourceTree = "<group>"; };
+		2173C2811BA2D77B0029E00A /* TabFourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFourCell.m; sourceTree = "<group>"; };
 		855819ADE344F580CA051856 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75ECBBD2D01F0A39018111C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +204,8 @@
 				2173C23E1BA2B64A0029E00A /* TabTwoMenuCell.m */,
 				2173C27D1BA2C4B30029E00A /* TabThreeCell.h */,
 				2173C27E1BA2C4B30029E00A /* TabThreeCell.m */,
+				2173C2801BA2D77B0029E00A /* TabFourCell.h */,
+				2173C2811BA2D77B0029E00A /* TabFourCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				2173C2391BA2810E0029E00A /* NSTimer+Addition.m in Sources */,
 				2173C2241BA273E40029E00A /* MainViewController.m in Sources */,
 				2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */,
+				2173C2821BA2D77B0029E00A /* TabFourCell.m in Sources */,
 				2173C21C1BA26D5B0029E00A /* TabViews.m in Sources */,
 				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
 				2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */,
