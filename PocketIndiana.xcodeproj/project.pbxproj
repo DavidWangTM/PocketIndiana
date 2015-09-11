@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2117B6541BA25B760082F0EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2117B6531BA25B760082F0EF /* main.m */; };
+		2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2117B6561BA25B760082F0EF /* AppDelegate.m */; };
+		2117B65D1BA25B760082F0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2117B65B1BA25B760082F0EF /* Main.storyboard */; };
+		2117B65F1BA25B760082F0EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2117B65E1BA25B760082F0EF /* Images.xcassets */; };
+		2117B6621BA25B760082F0EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2117B6601BA25B760082F0EF /* LaunchScreen.xib */; };
+		2117B66E1BA25B760082F0EF /* PocketIndianaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2117B66D1BA25B760082F0EF /* PocketIndianaTests.m */; };
+		2173C20C1BA263820029E00A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20B1BA263820029E00A /* BaseViewController.m */; };
+		2173C2101BA263AE0029E00A /* HttpManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20F1BA263AE0029E00A /* HttpManage.m */; };
+		2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2121BA2652E0029E00A /* WelComeViewController.m */; };
+		2173C2171BA2657C0029E00A /* WelComeViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2161BA2657C0029E00A /* WelComeViews.m */; };
+		2173C2191BA265870029E00A /* WelComeViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2173C2181BA265870029E00A /* WelComeViews.xib */; };
+		2173C21C1BA26D5B0029E00A /* TabViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C21B1BA26D5B0029E00A /* TabViews.m */; };
+		2173C21E1BA26D660029E00A /* TabViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2173C21D1BA26D660029E00A /* TabViews.xib */; };
+		2173C2241BA273E40029E00A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2231BA273E40029E00A /* MainViewController.m */; };
+		2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2261BA27F140029E00A /* TabOneViewController.m */; };
+		2173C22A1BA27F1C0029E00A /* TabTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2291BA27F1C0029E00A /* TabTwoViewController.m */; };
+		2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C22C1BA27F230029E00A /* TabThreeViewController.m */; };
+		2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C22F1BA27F2C0029E00A /* TabFourViewController.m */; };
+		2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2321BA27F350029E00A /* TabFiveViewController.m */; };
+		2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2351BA2810E0029E00A /* CycleScrollView.m */; };
+		2173C2391BA2810E0029E00A /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2371BA2810E0029E00A /* NSTimer+Addition.m */; };
+		2173C23C1BA286B80029E00A /* TabOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C23B1BA286B80029E00A /* TabOneCell.m */; };
+		2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C23E1BA2B64A0029E00A /* TabTwoMenuCell.m */; };
+		2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2411BA2B6570029E00A /* TabTwoCell.m */; };
+		2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C27E1BA2C4B30029E00A /* TabThreeCell.m */; };
+		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2117B6681BA25B760082F0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2117B6461BA25B760082F0EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2117B64D1BA25B760082F0EF;
+			remoteInfo = PocketIndiana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C92429F9C470F427BEEBEF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2117B64E1BA25B760082F0EF /* PocketIndiana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketIndiana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2117B6521BA25B760082F0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2117B6531BA25B760082F0EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2117B6551BA25B760082F0EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2117B6561BA25B760082F0EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2117B65C1BA25B760082F0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2117B65E1BA25B760082F0EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2117B6611BA25B760082F0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2117B6671BA25B760082F0EF /* PocketIndianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketIndianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2117B66C1BA25B760082F0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2117B66D1BA25B760082F0EF /* PocketIndianaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketIndianaTests.m; sourceTree = "<group>"; };
+		2173C2091BA263440029E00A /* PCHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCHead.h; sourceTree = "<group>"; };
+		2173C20A1BA263820029E00A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2173C20B1BA263820029E00A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2173C20E1BA263AE0029E00A /* HttpManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManage.h; sourceTree = "<group>"; };
+		2173C20F1BA263AE0029E00A /* HttpManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManage.m; sourceTree = "<group>"; };
+		2173C2111BA2652E0029E00A /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
+		2173C2121BA2652E0029E00A /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
+		2173C2151BA2657C0029E00A /* WelComeViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViews.h; sourceTree = "<group>"; };
+		2173C2161BA2657C0029E00A /* WelComeViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViews.m; sourceTree = "<group>"; };
+		2173C2181BA265870029E00A /* WelComeViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelComeViews.xib; sourceTree = "<group>"; };
+		2173C21A1BA26D5B0029E00A /* TabViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViews.h; sourceTree = "<group>"; };
+		2173C21B1BA26D5B0029E00A /* TabViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViews.m; sourceTree = "<group>"; };
+		2173C21D1BA26D660029E00A /* TabViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabViews.xib; sourceTree = "<group>"; };
+		2173C2221BA273E40029E00A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2173C2231BA273E40029E00A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2173C2251BA27F140029E00A /* TabOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabOneViewController.h; sourceTree = "<group>"; };
+		2173C2261BA27F140029E00A /* TabOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabOneViewController.m; sourceTree = "<group>"; };
+		2173C2281BA27F1C0029E00A /* TabTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTwoViewController.h; sourceTree = "<group>"; };
+		2173C2291BA27F1C0029E00A /* TabTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTwoViewController.m; sourceTree = "<group>"; };
+		2173C22B1BA27F230029E00A /* TabThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabThreeViewController.h; sourceTree = "<group>"; };
+		2173C22C1BA27F230029E00A /* TabThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabThreeViewController.m; sourceTree = "<group>"; };
+		2173C22E1BA27F2C0029E00A /* TabFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFourViewController.h; sourceTree = "<group>"; };
+		2173C22F1BA27F2C0029E00A /* TabFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFourViewController.m; sourceTree = "<group>"; };
+		2173C2311BA27F350029E00A /* TabFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveViewController.h; sourceTree = "<group>"; };
+		2173C2321BA27F350029E00A /* TabFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFiveViewController.m; sourceTree = "<group>"; };
+		2173C2341BA2810E0029E00A /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		2173C2351BA2810E0029E00A /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		2173C2361BA2810E0029E00A /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		2173C2371BA2810E0029E00A /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		2173C23A1BA286B80029E00A /* TabOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabOneCell.h; sourceTree = "<group>"; };
+		2173C23B1BA286B80029E00A /* TabOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabOneCell.m; sourceTree = "<group>"; };
+		2173C23D1BA2B64A0029E00A /* TabTwoMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTwoMenuCell.h; sourceTree = "<group>"; };
+		2173C23E1BA2B64A0029E00A /* TabTwoMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTwoMenuCell.m; sourceTree = "<group>"; };
+		2173C2401BA2B6570029E00A /* TabTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTwoCell.h; sourceTree = "<group>"; };
+		2173C2411BA2B6570029E00A /* TabTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTwoCell.m; sourceTree = "<group>"; };
+		2173C27D1BA2C4B30029E00A /* TabThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabThreeCell.h; sourceTree = "<group>"; };
+		2173C27E1BA2C4B30029E00A /* TabThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabThreeCell.m; sourceTree = "<group>"; };
+		855819ADE344F580CA051856 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75ECBBD2D01F0A39018111C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2117B64B1BA25B760082F0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2117B6641BA25B760082F0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2117B6451BA25B760082F0EF = {
+			isa = PBXGroup;
+			children = (
+				2117B6501BA25B760082F0EF /* PocketIndiana */,
+				2117B66A1BA25B760082F0EF /* PocketIndianaTests */,
+				2117B64F1BA25B760082F0EF /* Products */,
+				62A83A522AC66E544561113B /* Pods */,
+				CD761458E4F6B97FC1ADFE86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2117B64F1BA25B760082F0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2117B64E1BA25B760082F0EF /* PocketIndiana.app */,
+				2117B6671BA25B760082F0EF /* PocketIndianaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2117B6501BA25B760082F0EF /* PocketIndiana */ = {
+			isa = PBXGroup;
+			children = (
+				2173C2041BA262F70029E00A /* Cells */,
+				2173C2051BA262F70029E00A /* Models */,
+				2173C2071BA262F80029E00A /* Tools */,
+				2173C2081BA262F80029E00A /* Views */,
+				2173C20D1BA263A10029E00A /* HttpRequest */,
+				2173C2061BA262F80029E00A /* TabViewMainController */,
+				2117B6551BA25B760082F0EF /* AppDelegate.h */,
+				2117B6561BA25B760082F0EF /* AppDelegate.m */,
+				2173C20A1BA263820029E00A /* BaseViewController.h */,
+				2173C20B1BA263820029E00A /* BaseViewController.m */,
+				2173C2111BA2652E0029E00A /* WelComeViewController.h */,
+				2173C2121BA2652E0029E00A /* WelComeViewController.m */,
+				2173C2221BA273E40029E00A /* MainViewController.h */,
+				2173C2231BA273E40029E00A /* MainViewController.m */,
+				2117B65B1BA25B760082F0EF /* Main.storyboard */,
+				2117B65E1BA25B760082F0EF /* Images.xcassets */,
+				2117B6601BA25B760082F0EF /* LaunchScreen.xib */,
+				2117B6511BA25B760082F0EF /* Supporting Files */,
+			);
+			path = PocketIndiana;
+			sourceTree = "<group>";
+		};
+		2117B6511BA25B760082F0EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2117B6521BA25B760082F0EF /* Info.plist */,
+				2117B6531BA25B760082F0EF /* main.m */,
+				2173C2091BA263440029E00A /* PCHead.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2117B66A1BA25B760082F0EF /* PocketIndianaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2117B66D1BA25B760082F0EF /* PocketIndianaTests.m */,
+				2117B66B1BA25B760082F0EF /* Supporting Files */,
+			);
+			path = PocketIndianaTests;
+			sourceTree = "<group>";
+		};
+		2117B66B1BA25B760082F0EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2117B66C1BA25B760082F0EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2173C2041BA262F70029E00A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2173C23A1BA286B80029E00A /* TabOneCell.h */,
+				2173C23B1BA286B80029E00A /* TabOneCell.m */,
+				2173C2401BA2B6570029E00A /* TabTwoCell.h */,
+				2173C2411BA2B6570029E00A /* TabTwoCell.m */,
+				2173C23D1BA2B64A0029E00A /* TabTwoMenuCell.h */,
+				2173C23E1BA2B64A0029E00A /* TabTwoMenuCell.m */,
+				2173C27D1BA2C4B30029E00A /* TabThreeCell.h */,
+				2173C27E1BA2C4B30029E00A /* TabThreeCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2173C2051BA262F70029E00A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2173C2061BA262F80029E00A /* TabViewMainController */ = {
+			isa = PBXGroup;
+			children = (
+				2173C2251BA27F140029E00A /* TabOneViewController.h */,
+				2173C2261BA27F140029E00A /* TabOneViewController.m */,
+				2173C2281BA27F1C0029E00A /* TabTwoViewController.h */,
+				2173C2291BA27F1C0029E00A /* TabTwoViewController.m */,
+				2173C22B1BA27F230029E00A /* TabThreeViewController.h */,
+				2173C22C1BA27F230029E00A /* TabThreeViewController.m */,
+				2173C22E1BA27F2C0029E00A /* TabFourViewController.h */,
+				2173C22F1BA27F2C0029E00A /* TabFourViewController.m */,
+				2173C2311BA27F350029E00A /* TabFiveViewController.h */,
+				2173C2321BA27F350029E00A /* TabFiveViewController.m */,
+			);
+			path = TabViewMainController;
+			sourceTree = "<group>";
+		};
+		2173C2071BA262F80029E00A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2173C2081BA262F80029E00A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2173C2141BA2655F0029E00A /* WelcomeView */,
+				2173C21A1BA26D5B0029E00A /* TabViews.h */,
+				2173C21B1BA26D5B0029E00A /* TabViews.m */,
+				2173C21D1BA26D660029E00A /* TabViews.xib */,
+				2173C2341BA2810E0029E00A /* CycleScrollView.h */,
+				2173C2351BA2810E0029E00A /* CycleScrollView.m */,
+				2173C2361BA2810E0029E00A /* NSTimer+Addition.h */,
+				2173C2371BA2810E0029E00A /* NSTimer+Addition.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2173C20D1BA263A10029E00A /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2173C20E1BA263AE0029E00A /* HttpManage.h */,
+				2173C20F1BA263AE0029E00A /* HttpManage.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		2173C2141BA2655F0029E00A /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				2173C2151BA2657C0029E00A /* WelComeViews.h */,
+				2173C2161BA2657C0029E00A /* WelComeViews.m */,
+				2173C2181BA265870029E00A /* WelComeViews.xib */,
+			);
+			name = WelcomeView;
+			sourceTree = "<group>";
+		};
+		62A83A522AC66E544561113B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C92429F9C470F427BEEBEF8 /* Pods.debug.xcconfig */,
+				B75ECBBD2D01F0A39018111C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD761458E4F6B97FC1ADFE86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				855819ADE344F580CA051856 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2117B64D1BA25B760082F0EF /* PocketIndiana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2117B6711BA25B760082F0EF /* Build configuration list for PBXNativeTarget "PocketIndiana" */;
+			buildPhases = (
+				64BA61E5667664BA68C3ED8A /* Check Pods Manifest.lock */,
+				2117B64A1BA25B760082F0EF /* Sources */,
+				2117B64B1BA25B760082F0EF /* Frameworks */,
+				2117B64C1BA25B760082F0EF /* Resources */,
+				CD4CCF78A8B2548B78B46642 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketIndiana;
+			productName = PocketIndiana;
+			productReference = 2117B64E1BA25B760082F0EF /* PocketIndiana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2117B6661BA25B760082F0EF /* PocketIndianaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2117B6741BA25B760082F0EF /* Build configuration list for PBXNativeTarget "PocketIndianaTests" */;
+			buildPhases = (
+				2117B6631BA25B760082F0EF /* Sources */,
+				2117B6641BA25B760082F0EF /* Frameworks */,
+				2117B6651BA25B760082F0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2117B6691BA25B760082F0EF /* PBXTargetDependency */,
+			);
+			name = PocketIndianaTests;
+			productName = PocketIndianaTests;
+			productReference = 2117B6671BA25B760082F0EF /* PocketIndianaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2117B6461BA25B760082F0EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = DavidWang;
+				TargetAttributes = {
+					2117B64D1BA25B760082F0EF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2117B6661BA25B760082F0EF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2117B64D1BA25B760082F0EF;
+					};
+				};
+			};
+			buildConfigurationList = 2117B6491BA25B760082F0EF /* Build configuration list for PBXProject "PocketIndiana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2117B6451BA25B760082F0EF;
+			productRefGroup = 2117B64F1BA25B760082F0EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2117B64D1BA25B760082F0EF /* PocketIndiana */,
+				2117B6661BA25B760082F0EF /* PocketIndianaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2117B64C1BA25B760082F0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2117B65D1BA25B760082F0EF /* Main.storyboard in Resources */,
+				2117B6621BA25B760082F0EF /* LaunchScreen.xib in Resources */,
+				2117B65F1BA25B760082F0EF /* Images.xcassets in Resources */,
+				2173C2191BA265870029E00A /* WelComeViews.xib in Resources */,
+				2173C21E1BA26D660029E00A /* TabViews.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2117B6651BA25B760082F0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64BA61E5667664BA68C3ED8A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4CCF78A8B2548B78B46642 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2117B64A1BA25B760082F0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2173C23C1BA286B80029E00A /* TabOneCell.m in Sources */,
+				2173C20C1BA263820029E00A /* BaseViewController.m in Sources */,
+				2173C2171BA2657C0029E00A /* WelComeViews.m in Sources */,
+				2173C2101BA263AE0029E00A /* HttpManage.m in Sources */,
+				2173C2391BA2810E0029E00A /* NSTimer+Addition.m in Sources */,
+				2173C2241BA273E40029E00A /* MainViewController.m in Sources */,
+				2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */,
+				2173C21C1BA26D5B0029E00A /* TabViews.m in Sources */,
+				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
+				2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */,
+				2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */,
+				2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */,
+				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
+				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
+				2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */,
+				2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */,
+				2117B6541BA25B760082F0EF /* main.m in Sources */,
+				2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */,
+				2173C22A1BA27F1C0029E00A /* TabTwoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2117B6631BA25B760082F0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2117B66E1BA25B760082F0EF /* PocketIndianaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2117B6691BA25B760082F0EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2117B64D1BA25B760082F0EF /* PocketIndiana */;
+			targetProxy = 2117B6681BA25B760082F0EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2117B65B1BA25B760082F0EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2117B65C1BA25B760082F0EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2117B6601BA25B760082F0EF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2117B6611BA25B760082F0EF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2117B66F1BA25B760082F0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2117B6701BA25B760082F0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2117B6721BA25B760082F0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C92429F9C470F427BEEBEF8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketIndiana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2117B6731BA25B760082F0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75ECBBD2D01F0A39018111C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PocketIndiana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2117B6751BA25B760082F0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PocketIndianaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketIndiana.app/PocketIndiana";
+			};
+			name = Debug;
+		};
+		2117B6761BA25B760082F0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PocketIndianaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketIndiana.app/PocketIndiana";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2117B6491BA25B760082F0EF /* Build configuration list for PBXProject "PocketIndiana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2117B66F1BA25B760082F0EF /* Debug */,
+				2117B6701BA25B760082F0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2117B6711BA25B760082F0EF /* Build configuration list for PBXNativeTarget "PocketIndiana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2117B6721BA25B760082F0EF /* Debug */,
+				2117B6731BA25B760082F0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2117B6741BA25B760082F0EF /* Build configuration list for PBXNativeTarget "PocketIndianaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2117B6751BA25B760082F0EF /* Debug */,
+				2117B6761BA25B760082F0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2117B6461BA25B760082F0EF /* Project object */;
+}
