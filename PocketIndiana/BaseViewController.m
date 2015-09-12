@@ -16,6 +16,7 @@
     CLLocationManager *_locationManager;
     CLGeocoder *_geocoder;
     BOOL is_show;
+    UILabel *titlelab;
 }
 
 
@@ -28,6 +29,8 @@
     
     [super viewDidAppear:animated];
 
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     if (ISIOS7LATER) {
         self.navigationController.interactivePopGestureRecognizer.delegate = self;//添加手势
     }
@@ -42,6 +45,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)addTopTitle{
+    UIView *labview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    titlelab = [[UILabel alloc] initWithFrame:labview.frame];
+    titlelab.font = [UIFont systemFontOfSize:23];
+    titlelab.textAlignment = UIBaselineAdjustmentAlignCenters;
+    titlelab.textColor = [UIColor whiteColor];
+    [labview addSubview:titlelab];
+    self.navigationItem.titleView = labview;
+}
+
+-(void)showTitle:(NSString *)name{
+    if (titlelab == nil) {
+        [self addTopTitle];
+    }
+    titlelab.text = name;
 }
 
 //侧滑手势

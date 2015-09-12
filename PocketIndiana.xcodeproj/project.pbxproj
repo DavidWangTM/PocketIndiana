@@ -36,6 +36,8 @@
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 		842C72631BA2FDE100A07D2F /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72621BA2FDE100A07D2F /* FourModel.m */; };
 		842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72681BA3100300A07D2F /* TabFiveCell.m */; };
+		84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D911BA43B3700EDA9FE /* LoginViewController.m */; };
+		84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D941BA43EB600EDA9FE /* RegistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,10 @@
 		842C72621BA2FDE100A07D2F /* FourModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourModel.m; sourceTree = "<group>"; };
 		842C72671BA3100300A07D2F /* TabFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveCell.h; sourceTree = "<group>"; };
 		842C72681BA3100300A07D2F /* TabFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFiveCell.m; sourceTree = "<group>"; };
+		84CF6D901BA43B3700EDA9FE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		84CF6D911BA43B3700EDA9FE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		84CF6D931BA43EB600EDA9FE /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		84CF6D941BA43EB600EDA9FE /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		855819ADE344F580CA051856 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75ECBBD2D01F0A39018111C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +162,7 @@
 				2173C2081BA262F80029E00A /* Views */,
 				2173C20D1BA263A10029E00A /* HttpRequest */,
 				2173C2061BA262F80029E00A /* TabViewMainController */,
+				84CF6D8F1BA43B2000EDA9FE /* UserViewController */,
 				2117B6551BA25B760082F0EF /* AppDelegate.h */,
 				2117B6561BA25B760082F0EF /* AppDelegate.m */,
 				2173C20A1BA263820029E00A /* BaseViewController.h */,
@@ -292,6 +299,17 @@
 				842C72621BA2FDE100A07D2F /* FourModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84CF6D8F1BA43B2000EDA9FE /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84CF6D901BA43B3700EDA9FE /* LoginViewController.h */,
+				84CF6D911BA43B3700EDA9FE /* LoginViewController.m */,
+				84CF6D931BA43EB600EDA9FE /* RegistViewController.h */,
+				84CF6D941BA43EB600EDA9FE /* RegistViewController.m */,
+			);
+			path = UserViewController;
 			sourceTree = "<group>";
 		};
 		CD761458E4F6B97FC1ADFE86 /* Frameworks */ = {
@@ -440,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2173C23C1BA286B80029E00A /* TabOneCell.m in Sources */,
+				84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */,
 				842C72631BA2FDE100A07D2F /* FourModel.m in Sources */,
 				2173C20C1BA263820029E00A /* BaseViewController.m in Sources */,
 				2173C2171BA2657C0029E00A /* WelComeViews.m in Sources */,
@@ -452,6 +471,7 @@
 				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
 				2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */,
 				2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */,
+				84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */,
 				2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */,
 				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,

@@ -25,7 +25,7 @@
 -(void)Locationinit;
 - (IBAction)backOnclick:(id)sender;
 -(void)makeACall :(NSString *) phoneNum;
-
+-(void)showTitle:(NSString *)name;
 -(void)setIs_show;
 
 @end

@@ -102,6 +102,7 @@
         self.navigationItem.rightBarButtonItem = right_five;
     }
     self.selectedIndex = num;
+    self.title = titlelab.text;
 }
 
 -(void)gonggaoOnClick{

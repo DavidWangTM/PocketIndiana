@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"个人中心";
     // Do any additional setup after loading the view.
     _userImageView.layer.cornerRadius = _userImageView.frame.size.width/2;
     
@@ -65,8 +66,11 @@
 */
 
 - (IBAction)loginOnclick:(id)sender {
+    [self performSegueWithIdentifier:@"login" sender:nil];
 }
 
 - (IBAction)registOnclick:(id)sender {
+    [self performSegueWithIdentifier:@"regist" sender:nil];
 }
+
 @end
