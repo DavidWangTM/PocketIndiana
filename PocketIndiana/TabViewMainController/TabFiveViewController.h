@@ -15,4 +15,11 @@
 - (IBAction)loginOnclick:(id)sender;
 - (IBAction)registOnclick:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIView *loginView;
+@property (weak, nonatomic) IBOutlet UIView *userView;
+@property (weak, nonatomic) IBOutlet UILabel *userPhone;
+@property (weak, nonatomic) IBOutlet UILabel *userMoney;
+- (IBAction)rechargeOnclick:(id)sender;
+
+
 @end

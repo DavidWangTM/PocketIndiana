@@ -85,6 +85,7 @@
     self.navigationItem.rightBarButtonItem = nil;
     self.navigationItem.titleView = nil;
     if (num == 0) {
+        titlelab.text = @"";
         self.navigationItem.leftBarButtonItem =  left;
         self.navigationItem.rightBarButtonItem = right;
     }else if(num == 1){
@@ -110,7 +111,7 @@
 }
 
 -(void)moreOnclick{
-    
+    [self performSegueWithIdentifier:@"more" sender:nil];
 }
 
 /*

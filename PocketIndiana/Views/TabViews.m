@@ -60,10 +60,10 @@
         UILabel *label = (UILabel *)[_mainView viewWithTag:300+i];
         if (i == index) {
             [view setBackgroundColor:[[UIColor alloc] initWithRed:157.0/255.0 green:14.0/255.0 blue:24.0/255.0 alpha:1.0]];
-            imageview.highlighted = YES;
+            imageview.alpha = 1.0;
             label.highlighted = YES;
         }else{
-            imageview.highlighted = NO;
+            imageview.alpha = 0.5;
             label.highlighted = NO;
             [view setBackgroundColor:[UIColor clearColor]];
         }

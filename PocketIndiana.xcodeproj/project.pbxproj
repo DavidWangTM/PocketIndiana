@@ -36,6 +36,7 @@
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 		842C72631BA2FDE100A07D2F /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72621BA2FDE100A07D2F /* FourModel.m */; };
 		842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72681BA3100300A07D2F /* TabFiveCell.m */; };
+		84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC34F31BA5449900AEA39D /* MoreViewController.m */; };
 		84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D911BA43B3700EDA9FE /* LoginViewController.m */; };
 		84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D941BA43EB600EDA9FE /* RegistViewController.m */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,8 @@
 		842C72621BA2FDE100A07D2F /* FourModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourModel.m; sourceTree = "<group>"; };
 		842C72671BA3100300A07D2F /* TabFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveCell.h; sourceTree = "<group>"; };
 		842C72681BA3100300A07D2F /* TabFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFiveCell.m; sourceTree = "<group>"; };
+		84CC34F21BA5449900AEA39D /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		84CC34F31BA5449900AEA39D /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		84CF6D901BA43B3700EDA9FE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		84CF6D911BA43B3700EDA9FE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		84CF6D931BA43EB600EDA9FE /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 				2173C20D1BA263A10029E00A /* HttpRequest */,
 				2173C2061BA262F80029E00A /* TabViewMainController */,
 				84CF6D8F1BA43B2000EDA9FE /* UserViewController */,
+				84CC34F11BA5448B00AEA39D /* SettingViewController */,
 				2117B6551BA25B760082F0EF /* AppDelegate.h */,
 				2117B6561BA25B760082F0EF /* AppDelegate.m */,
 				2173C20A1BA263820029E00A /* BaseViewController.h */,
@@ -299,6 +303,15 @@
 				842C72621BA2FDE100A07D2F /* FourModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84CC34F11BA5448B00AEA39D /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84CC34F21BA5449900AEA39D /* MoreViewController.h */,
+				84CC34F31BA5449900AEA39D /* MoreViewController.m */,
+			);
+			path = SettingViewController;
 			sourceTree = "<group>";
 		};
 		84CF6D8F1BA43B2000EDA9FE /* UserViewController */ = {
@@ -476,6 +489,7 @@
 				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,
 				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
+				84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */,
 				2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */,
 				2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */,
 				2117B6541BA25B760082F0EF /* main.m in Sources */,

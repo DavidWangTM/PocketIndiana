@@ -22,9 +22,29 @@
     self.title = @"个人中心";
     // Do any additional setup after loading the view.
     _userImageView.layer.cornerRadius = _userImageView.frame.size.width/2;
+
+    [self ChangeUserData];
     
-    data = @[@"抢单记录",@"中奖记录",@"晒单记录",@"收货地址",@"物流发放",@"客服咨询"];
     [_collectionView reloadData];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:USER_INFO] != nil) {
+        [self ChangeUserData];
+    }else{
+        data = @[@"抢单记录",@"中奖记录",@"晒单记录",@"收货地址",@"物流发放",@"客服咨询"];
+        _userView.hidden = YES;
+        _loginView.hidden = NO;
+    }
+    [_collectionView reloadData];
+}
+
+-(void)ChangeUserData{
+    data = @[@"抢单记录",@"中奖记录",@"晒单记录",@"充值记录",@"推广",@"收货地址",@"物流发放",@"客服咨询",@"意见反馈"];
+    _userView.hidden = NO;
+    _loginView.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,4 +93,7 @@
     [self performSegueWithIdentifier:@"regist" sender:nil];
 }
 
+- (IBAction)rechargeOnclick:(id)sender {
+    
+}
 @end

@@ -41,4 +41,31 @@
 }
 */
 
+- (IBAction)forgetpwOnclick:(id)sender {
+}
+
+- (IBAction)loginOnclick:(id)sender {
+    [self LoginBack];
+}
+
+- (IBAction)backLogin:(id)sender {
+    [self LoginBack];
+}
+
+- (IBAction)wxLogin:(id)sender {
+    [self LoginBack];
+}
+
+- (IBAction)qqLogin:(id)sender {
+    [self LoginBack];
+}
+
+
+-(void)LoginBack{
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"1" forKey:USER_INFO];
+    [defaults synchronize];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

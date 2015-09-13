@@ -43,6 +43,7 @@
 #define CITY_NAME @"city_name"
 #define CITY_KEY @"city_key"
 #define TZ_BACKLOCATION @"BACKLOCATION"
+#define USER_INFO @"USERINFO"
 
 #define is_qq ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]])
 #define is_wx ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://://"]])
