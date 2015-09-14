@@ -171,7 +171,6 @@
     [self.view endEditing:NO];
 }
 
-
 - (IBAction)moveOnclick:(id)sender {
     MainViewController *main = (MainViewController *)self.tabBarController;
     [main MainselectNum:0];
