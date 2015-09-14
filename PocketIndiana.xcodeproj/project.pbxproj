@@ -38,6 +38,10 @@
 		218446BA1BA66ECA00D79894 /* HeadDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446B91BA66ECA00D79894 /* HeadDetailView.m */; };
 		218446BC1BA66ED900D79894 /* HeadDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218446BB1BA66ED900D79894 /* HeadDetailView.xib */; };
 		218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446BE1BA6B34B00D79894 /* UserCenterViewController.m */; };
+		218446C31BA6BB9600D79894 /* CenterOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446C21BA6BB9600D79894 /* CenterOneCell.m */; };
+		218446C61BA6BBA000D79894 /* CenterTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446C51BA6BBA000D79894 /* CenterTwoCell.m */; };
+		218446C91BA6CC2900D79894 /* PastAnnouncedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446C81BA6CC2900D79894 /* PastAnnouncedController.m */; };
+		218446CC1BA6CD5A00D79894 /* PastAnnouncedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446CB1BA6CD5A00D79894 /* PastAnnouncedCell.m */; };
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 		842C72631BA2FDE100A07D2F /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72621BA2FDE100A07D2F /* FourModel.m */; };
 		842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72681BA3100300A07D2F /* TabFiveCell.m */; };
@@ -117,6 +121,14 @@
 		218446BB1BA66ED900D79894 /* HeadDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadDetailView.xib; sourceTree = "<group>"; };
 		218446BD1BA6B34B00D79894 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
 		218446BE1BA6B34B00D79894 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		218446C11BA6BB9600D79894 /* CenterOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterOneCell.h; sourceTree = "<group>"; };
+		218446C21BA6BB9600D79894 /* CenterOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterOneCell.m; sourceTree = "<group>"; };
+		218446C41BA6BBA000D79894 /* CenterTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterTwoCell.h; sourceTree = "<group>"; };
+		218446C51BA6BBA000D79894 /* CenterTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterTwoCell.m; sourceTree = "<group>"; };
+		218446C71BA6CC2900D79894 /* PastAnnouncedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastAnnouncedController.h; sourceTree = "<group>"; };
+		218446C81BA6CC2900D79894 /* PastAnnouncedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastAnnouncedController.m; sourceTree = "<group>"; };
+		218446CA1BA6CD5A00D79894 /* PastAnnouncedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastAnnouncedCell.h; sourceTree = "<group>"; };
+		218446CB1BA6CD5A00D79894 /* PastAnnouncedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastAnnouncedCell.m; sourceTree = "<group>"; };
 		842C72611BA2FDE100A07D2F /* FourModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourModel.h; sourceTree = "<group>"; };
 		842C72621BA2FDE100A07D2F /* FourModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourModel.m; sourceTree = "<group>"; };
 		842C72671BA3100300A07D2F /* TabFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveCell.h; sourceTree = "<group>"; };
@@ -228,6 +240,7 @@
 		2173C2041BA262F70029E00A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				218446C01BA6BB8100D79894 /* UserCenterCell */,
 				2173C23A1BA286B80029E00A /* TabOneCell.h */,
 				2173C23B1BA286B80029E00A /* TabOneCell.m */,
 				2173C2401BA2B6570029E00A /* TabTwoCell.h */,
@@ -242,6 +255,8 @@
 				842C72681BA3100300A07D2F /* TabFiveCell.m */,
 				218446B01BA656A600D79894 /* ProductDetailsCell.h */,
 				218446B11BA656A600D79894 /* ProductDetailsCell.m */,
+				218446CA1BA6CD5A00D79894 /* PastAnnouncedCell.h */,
+				218446CB1BA6CD5A00D79894 /* PastAnnouncedCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -312,8 +327,21 @@
 			children = (
 				218446AD1BA651FB00D79894 /* ProductDetailsController.h */,
 				218446AE1BA651FB00D79894 /* ProductDetailsController.m */,
+				218446C71BA6CC2900D79894 /* PastAnnouncedController.h */,
+				218446C81BA6CC2900D79894 /* PastAnnouncedController.m */,
 			);
 			path = ProductDetailsViewController;
+			sourceTree = "<group>";
+		};
+		218446C01BA6BB8100D79894 /* UserCenterCell */ = {
+			isa = PBXGroup;
+			children = (
+				218446C11BA6BB9600D79894 /* CenterOneCell.h */,
+				218446C21BA6BB9600D79894 /* CenterOneCell.m */,
+				218446C41BA6BBA000D79894 /* CenterTwoCell.h */,
+				218446C51BA6BBA000D79894 /* CenterTwoCell.m */,
+			);
+			name = UserCenterCell;
 			sourceTree = "<group>";
 		};
 		62A83A522AC66E544561113B /* Pods */ = {
@@ -502,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218446C61BA6BBA000D79894 /* CenterTwoCell.m in Sources */,
 				2173C23C1BA286B80029E00A /* TabOneCell.m in Sources */,
 				84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */,
 				842C72631BA2FDE100A07D2F /* FourModel.m in Sources */,
@@ -512,6 +541,7 @@
 				2173C2391BA2810E0029E00A /* NSTimer+Addition.m in Sources */,
 				2173C2241BA273E40029E00A /* MainViewController.m in Sources */,
 				2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */,
+				218446C91BA6CC2900D79894 /* PastAnnouncedController.m in Sources */,
 				2173C2821BA2D77B0029E00A /* TabFourCell.m in Sources */,
 				2173C21C1BA26D5B0029E00A /* TabViews.m in Sources */,
 				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
@@ -519,10 +549,12 @@
 				2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */,
 				218446AF1BA651FB00D79894 /* ProductDetailsController.m in Sources */,
 				84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */,
+				218446C31BA6BB9600D79894 /* CenterOneCell.m in Sources */,
 				2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */,
 				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,
 				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
+				218446CC1BA6CD5A00D79894 /* PastAnnouncedCell.m in Sources */,
 				218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */,
 				84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */,
 				2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */,

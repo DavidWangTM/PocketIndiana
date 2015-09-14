@@ -30,6 +30,12 @@
     [self initView];
     [self AddRight];
     [self ChangeTopView];
+    [self AddTapView];
+}
+
+-(void)AddTapView{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pacOnclick)];
+    [_pacView addGestureRecognizer:tap];
 }
 
 -(void)AddRight{
@@ -252,11 +258,19 @@
 */
 
 - (IBAction)userOnclick:(id)sender {
+    [self performSegueWithIdentifier:@"userCenter" sender:nil];
 }
 - (IBAction)lookuserjoinOnclick:(id)sender {
+    
 }
 - (IBAction)detailOnclic:(id)sender {
+    
 }
 - (IBAction)luckyOnclick:(id)sender {
+    
+}
+
+-(void)pacOnclick{
+    [self performSegueWithIdentifier:@"pac" sender:nil];
 }
 @end

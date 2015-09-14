@@ -41,6 +41,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *pastNum;
 @property (weak, nonatomic) IBOutlet UIView *mainproView;
 @property (weak, nonatomic) IBOutlet UIView *changeView;
+@property (weak, nonatomic) IBOutlet UIView *pacView;
 
 //状态,0为正在抢，1为揭晓，2为揭晓成功
 @property NSInteger type_index;

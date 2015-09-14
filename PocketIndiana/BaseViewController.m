@@ -61,6 +61,7 @@
         [self addTopTitle];
     }
     titlelab.text = name;
+    self.title = name;
 }
 
 //侧滑手势
