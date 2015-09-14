@@ -38,6 +38,10 @@
     [self initData];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"%f",self.view.frame.origin.y);
+}
+
 -(void)initData{
     for (int i = 0; i<10 ; i++) {
         FourModel *model = [FourModel new];
@@ -99,7 +103,7 @@
     }
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -107,7 +111,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (IBAction)payOnClick:(id)sender {
     

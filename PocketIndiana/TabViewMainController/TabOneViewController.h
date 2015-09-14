@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *HeadView;
 
+- (IBAction)moreOnclick:(id)sender;
 
 @end

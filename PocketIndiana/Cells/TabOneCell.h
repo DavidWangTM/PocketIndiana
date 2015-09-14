@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TabOneCellDelegate <NSObject>
+
+-(void)ShoppingCart:(NSInteger) index;
+-(void)ViewOnClick:(NSInteger) index;
+
+@end
+
 @interface TabOneCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *leftImage;
@@ -27,7 +34,10 @@
 @property (weak, nonatomic) IBOutlet UIView *rightproView;
 @property (weak, nonatomic) IBOutlet UIView *rightproShowView;
 
+@property (weak, nonatomic) IBOutlet UIView *leftView;
+@property (weak, nonatomic) IBOutlet UIView *rightView;
 
-
+@property (weak ,nonatomic) id<TabOneCellDelegate> delegate;
+@property NSInteger index;
 
 @end

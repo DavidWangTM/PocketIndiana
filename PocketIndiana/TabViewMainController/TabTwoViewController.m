@@ -9,6 +9,7 @@
 #import "TabTwoViewController.h"
 #import "TabTwoCell.h"
 #import "TabTwoMenuCell.h"
+#import "ProductDetailsController.h"
 
 @interface TabTwoViewController ()
 
@@ -26,6 +27,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
 
 - (void)setupRefresh
@@ -70,17 +75,26 @@
         
         return cell;
     }
+}
+
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView != _tableView) {return;}
+    [self performSegueWithIdentifier:@"detail" sender:nil];
     
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier compare:@"detail"] == NSOrderedSame ) {
+        ProductDetailsController *pdc = (ProductDetailsController*)segue.destinationViewController;
+        pdc.type_index = 1;
+    }
 }
-*/
 
 @end

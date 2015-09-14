@@ -18,6 +18,13 @@
     
     _rightContent.layer.cornerRadius = 3.0;
     _rightproShowView.layer.cornerRadius = 3.0;
+    
+    UITapGestureRecognizer *lefttap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftViewOnclick)];
+    [_leftView addGestureRecognizer:lefttap];
+    
+    UITapGestureRecognizer *righttap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rightViewOnclick)];
+    
+    [_rightView addGestureRecognizer:righttap];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -27,11 +34,19 @@
 }
 
 - (IBAction)leftOnclick:(id)sender {
-    
+    [_delegate ShoppingCart:_index*2];
 }
 
 - (IBAction)rightOnclick:(id)sender {
-    
+    [_delegate ShoppingCart:_index*2 + 1];
+}
+
+-(void)leftViewOnclick{
+    [_delegate ViewOnClick:_index*2];
+}
+
+-(void)rightViewOnclick{
+    [_delegate ViewOnClick:_index*2 + 1];
 }
 
 @end

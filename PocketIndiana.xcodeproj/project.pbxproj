@@ -33,6 +33,11 @@
 		2173C2421BA2B6570029E00A /* TabTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2411BA2B6570029E00A /* TabTwoCell.m */; };
 		2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C27E1BA2C4B30029E00A /* TabThreeCell.m */; };
 		2173C2821BA2D77B0029E00A /* TabFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2811BA2D77B0029E00A /* TabFourCell.m */; };
+		218446AF1BA651FB00D79894 /* ProductDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446AE1BA651FB00D79894 /* ProductDetailsController.m */; };
+		218446B21BA656A600D79894 /* ProductDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446B11BA656A600D79894 /* ProductDetailsCell.m */; };
+		218446BA1BA66ECA00D79894 /* HeadDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446B91BA66ECA00D79894 /* HeadDetailView.m */; };
+		218446BC1BA66ED900D79894 /* HeadDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218446BB1BA66ED900D79894 /* HeadDetailView.xib */; };
+		218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218446BE1BA6B34B00D79894 /* UserCenterViewController.m */; };
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 		842C72631BA2FDE100A07D2F /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72621BA2FDE100A07D2F /* FourModel.m */; };
 		842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72681BA3100300A07D2F /* TabFiveCell.m */; };
@@ -103,6 +108,15 @@
 		2173C27E1BA2C4B30029E00A /* TabThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabThreeCell.m; sourceTree = "<group>"; };
 		2173C2801BA2D77B0029E00A /* TabFourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFourCell.h; sourceTree = "<group>"; };
 		2173C2811BA2D77B0029E00A /* TabFourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFourCell.m; sourceTree = "<group>"; };
+		218446AD1BA651FB00D79894 /* ProductDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsController.h; sourceTree = "<group>"; };
+		218446AE1BA651FB00D79894 /* ProductDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsController.m; sourceTree = "<group>"; };
+		218446B01BA656A600D79894 /* ProductDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsCell.h; sourceTree = "<group>"; };
+		218446B11BA656A600D79894 /* ProductDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsCell.m; sourceTree = "<group>"; };
+		218446B81BA66ECA00D79894 /* HeadDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadDetailView.h; sourceTree = "<group>"; };
+		218446B91BA66ECA00D79894 /* HeadDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadDetailView.m; sourceTree = "<group>"; };
+		218446BB1BA66ED900D79894 /* HeadDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadDetailView.xib; sourceTree = "<group>"; };
+		218446BD1BA6B34B00D79894 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		218446BE1BA6B34B00D79894 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
 		842C72611BA2FDE100A07D2F /* FourModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourModel.h; sourceTree = "<group>"; };
 		842C72621BA2FDE100A07D2F /* FourModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourModel.m; sourceTree = "<group>"; };
 		842C72671BA3100300A07D2F /* TabFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveCell.h; sourceTree = "<group>"; };
@@ -167,6 +181,7 @@
 				2173C2061BA262F80029E00A /* TabViewMainController */,
 				84CF6D8F1BA43B2000EDA9FE /* UserViewController */,
 				84CC34F11BA5448B00AEA39D /* SettingViewController */,
+				218446AC1BA651D500D79894 /* ProductDetailsViewController */,
 				2117B6551BA25B760082F0EF /* AppDelegate.h */,
 				2117B6561BA25B760082F0EF /* AppDelegate.m */,
 				2173C20A1BA263820029E00A /* BaseViewController.h */,
@@ -225,6 +240,8 @@
 				2173C2811BA2D77B0029E00A /* TabFourCell.m */,
 				842C72671BA3100300A07D2F /* TabFiveCell.h */,
 				842C72681BA3100300A07D2F /* TabFiveCell.m */,
+				218446B01BA656A600D79894 /* ProductDetailsCell.h */,
+				218446B11BA656A600D79894 /* ProductDetailsCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -264,6 +281,9 @@
 				2173C2351BA2810E0029E00A /* CycleScrollView.m */,
 				2173C2361BA2810E0029E00A /* NSTimer+Addition.h */,
 				2173C2371BA2810E0029E00A /* NSTimer+Addition.m */,
+				218446B81BA66ECA00D79894 /* HeadDetailView.h */,
+				218446B91BA66ECA00D79894 /* HeadDetailView.m */,
+				218446BB1BA66ED900D79894 /* HeadDetailView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +305,15 @@
 				2173C2181BA265870029E00A /* WelComeViews.xib */,
 			);
 			name = WelcomeView;
+			sourceTree = "<group>";
+		};
+		218446AC1BA651D500D79894 /* ProductDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				218446AD1BA651FB00D79894 /* ProductDetailsController.h */,
+				218446AE1BA651FB00D79894 /* ProductDetailsController.m */,
+			);
+			path = ProductDetailsViewController;
 			sourceTree = "<group>";
 		};
 		62A83A522AC66E544561113B /* Pods */ = {
@@ -321,6 +350,8 @@
 				84CF6D911BA43B3700EDA9FE /* LoginViewController.m */,
 				84CF6D931BA43EB600EDA9FE /* RegistViewController.h */,
 				84CF6D941BA43EB600EDA9FE /* RegistViewController.m */,
+				218446BD1BA6B34B00D79894 /* UserCenterViewController.h */,
+				218446BE1BA6B34B00D79894 /* UserCenterViewController.m */,
 			);
 			path = UserViewController;
 			sourceTree = "<group>";
@@ -420,6 +451,7 @@
 				2117B65F1BA25B760082F0EF /* Images.xcassets in Resources */,
 				2173C2191BA265870029E00A /* WelComeViews.xib in Resources */,
 				2173C21E1BA26D660029E00A /* TabViews.xib in Resources */,
+				218446BC1BA66ED900D79894 /* HeadDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +507,7 @@
 				842C72631BA2FDE100A07D2F /* FourModel.m in Sources */,
 				2173C20C1BA263820029E00A /* BaseViewController.m in Sources */,
 				2173C2171BA2657C0029E00A /* WelComeViews.m in Sources */,
+				218446BA1BA66ECA00D79894 /* HeadDetailView.m in Sources */,
 				2173C2101BA263AE0029E00A /* HttpManage.m in Sources */,
 				2173C2391BA2810E0029E00A /* NSTimer+Addition.m in Sources */,
 				2173C2241BA273E40029E00A /* MainViewController.m in Sources */,
@@ -484,13 +517,16 @@
 				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
 				2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */,
 				2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */,
+				218446AF1BA651FB00D79894 /* ProductDetailsController.m in Sources */,
 				84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */,
 				2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */,
 				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,
 				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
+				218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */,
 				84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */,
 				2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */,
+				218446B21BA656A600D79894 /* ProductDetailsCell.m in Sources */,
 				2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */,
 				2117B6541BA25B760082F0EF /* main.m in Sources */,
 				2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */,

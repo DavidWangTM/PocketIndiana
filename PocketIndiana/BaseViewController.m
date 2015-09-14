@@ -28,12 +28,11 @@
 -(void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
-
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    if (ISIOS7LATER) {
-        self.navigationController.interactivePopGestureRecognizer.delegate = self;//添加手势
-    }
+//    if (ISIOS7LATER) {
+//        self.navigationController.interactivePopGestureRecognizer.delegate = self;//添加手势
+//    }
     [self isGestureRecognizer:YES];
 }
 

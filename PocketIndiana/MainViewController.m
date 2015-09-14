@@ -43,7 +43,6 @@
     [leftview addSubview:image];
     left = [[UIBarButtonItem alloc] initWithCustomView:leftview];
     
-    
     UIView *righttview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 72, 24)];
     UIButton *rightbtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 0, 72, 24)];
     [rightbtn addTarget:self action:@selector(gonggaoOnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -64,12 +63,17 @@
     titlelab.textAlignment = UIBaselineAdjustmentAlignCenters;
     titlelab.textColor = [UIColor whiteColor];
     [labview addSubview:titlelab];
-    
     [self OnClickNum:0];
+    [self addNSNotification];
 }
 
+-(void)addNSNotification{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callBack) name:@"GWC" object:nil];
+}
 
-
+-(void)callBack{
+    [self MainselectNum:3];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -85,9 +89,11 @@
     self.navigationItem.rightBarButtonItem = nil;
     self.navigationItem.titleView = nil;
     if (num == 0) {
+        self.title = @"口袋夺宝";
         titlelab.text = @"";
         self.navigationItem.leftBarButtonItem =  left;
         self.navigationItem.rightBarButtonItem = right;
+        self.navigationItem.titleView = labview;
     }else if(num == 1){
         titlelab.text = @"全部商品";
         self.navigationItem.titleView = labview;
@@ -103,6 +109,9 @@
         self.navigationItem.rightBarButtonItem = right_five;
     }
     self.selectedIndex = num;
+    if (num == 0) {
+        return;
+    }
     self.title = titlelab.text;
 }
 

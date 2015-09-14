@@ -8,6 +8,7 @@
 
 #import "TabThreeViewController.h"
 #import "TabThreeCell.h"
+#import "ProductDetailsController.h"
 
 @interface TabThreeViewController ()
 
@@ -55,17 +56,21 @@
 #pragma mark <UICollectionViewDelegate>
 // 选中某个cell
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    [self performSegueWithIdentifier:@"detail" sender:nil];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier compare:@"detail"] == NSOrderedSame ) {
+        ProductDetailsController *pdc = (ProductDetailsController*)segue.destinationViewController;
+        pdc.type_index = 2;
+    }
 }
-*/
+
 
 @end
