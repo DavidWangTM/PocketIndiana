@@ -14,6 +14,7 @@
 @interface TabFourViewController ()<UITextFieldDelegate,TabFourCellDelegate>{
     NSMutableArray *data;
     NSInteger maxnum;
+    CGFloat mr_y;
 }
 
 @end
@@ -142,12 +143,27 @@
 
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    
+    NSInteger index = textField.tag - 100;
+    NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    [_tableView scrollToRowAtIndexPath:scrollIndexPath
+                      atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    if (index == data.count - 1) {
+        mr_y =_tableView.contentOffset.y;
+        [_tableView setContentOffset:CGPointMake(0,(index - 1)*170) animated:YES];
+    }
     return YES;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-
+    NSInteger index = textField.tag - 100;
+    FourModel *info = [data objectAtIndex:index];
+    NSInteger num = [textField.text integerValue];
+    info.num = num;
+    textField.text = [NSString stringWithFormat:@"%ld",num];
+    if (index == data.count - 1) {
+        [_tableView setContentOffset:CGPointMake(0,mr_y) animated:YES];
+    }
+    [self RefreshData];
 }
 
 
