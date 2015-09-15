@@ -13,6 +13,7 @@
 
 -(void)awakeFromNib{
     _tuView.layer.cornerRadius = 6.0;
+    _jiantouImage.layer.transform = CATransform3DMakeRotation( M_PI_2,0,0,1);;
 }
 
 /*

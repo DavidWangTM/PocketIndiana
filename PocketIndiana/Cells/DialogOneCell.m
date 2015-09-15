@@ -12,6 +12,11 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    if (IS_PHONE6) {
+        _showLab.font = [UIFont systemFontOfSize:16];
+    }else if (IS_PHONE6PIS){
+        _showLab.font = [UIFont systemFontOfSize:18];
+    }
 }
 
 @end

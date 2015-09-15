@@ -202,18 +202,26 @@
 //tableview delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (is_select) {
-        return 0;
+        return 1;
     }
     return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (is_select) {
+        return 0.5;
+    }
     return 60;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"ProductDetailsCell";
     ProductDetailsCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (is_select) {
+        cell.hidden = YES;
+    }else{
+        cell.hidden = NO;
+    }
     
     return cell;
 }
@@ -228,9 +236,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headViewOnclick)];
     [headview addGestureRecognizer:tap];
     if (is_select) {
-        
+        [UIView animateWithDuration:0.3 animations:^{
+            headview.jiantouImage.layer.transform = CATransform3DIdentity;
+        }];
     }else{
-        
+        [UIView animateWithDuration:0.3 animations:^{
+            headview.jiantouImage.layer.transform = CATransform3DMakeRotation( M_PI_2,0,0,1);
+        }];
     }
     
     return headview;
@@ -254,11 +266,12 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat width = (BOUNDS.width - (18*2 + 3 * 10))/4;
-    return CGSizeMake(width, width*0.66);
+    return CGSizeMake(width, width*0.33);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     DialogOneCell *cell = (DialogOneCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"DialogOneCell" forIndexPath:indexPath];
+    
     
     return cell;
 }

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PCHead.h"
 
 @interface DialogOneCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *showLab;
 @end

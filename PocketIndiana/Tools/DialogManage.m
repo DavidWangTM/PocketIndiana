@@ -15,7 +15,9 @@
     DialogOne *dialog = [[[NSBundle mainBundle] loadNibNamed:@"DialogOne" owner:self options:nil] firstObject];
     [dialog addGestureRecognizer:tap];
     dialog.tag = 188;
-    [dialog.collectionView registerClass:[DialogOneCell class] forCellWithReuseIdentifier:@"DialogOneCell"];
+    
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([DialogOneCell class]) bundle:nil];
+    [dialog.collectionView registerNib:nib forCellWithReuseIdentifier:@"DialogOneCell"];
     dialog.collectionView.delegate = delegate;
     dialog.collectionView.dataSource = datasource;
     dialog.frame = CGRectMake(0,0, SCREENWITH, SCREENHEIGHT);

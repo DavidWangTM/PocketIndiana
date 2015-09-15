@@ -1297,7 +1297,7 @@
                                         <rect key="frame" x="0.0" y="386" width="320" height="257"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h1J-ZJ-eaB" id="bhf-pY-BuR">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="256.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="FeM-qN-HMJ">
@@ -2376,7 +2376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3q-aM-qAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="-780"/>
+            <point key="canvasLocation" x="758" y="-958"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="WWB-0P-xfg">
