@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface ProductDetailsController : BaseViewController
+@interface ProductDetailsController : BaseViewController<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

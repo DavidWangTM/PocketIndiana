@@ -13,6 +13,11 @@
 		2117B65F1BA25B760082F0EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2117B65E1BA25B760082F0EF /* Images.xcassets */; };
 		2117B6621BA25B760082F0EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2117B6601BA25B760082F0EF /* LaunchScreen.xib */; };
 		2117B66E1BA25B760082F0EF /* PocketIndianaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2117B66D1BA25B760082F0EF /* PocketIndianaTests.m */; };
+		2124BB821BA7AA6B00720546 /* DialogOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124BB811BA7AA6B00720546 /* DialogOne.m */; };
+		2124BB841BA7AA7600720546 /* DialogOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2124BB831BA7AA7600720546 /* DialogOne.xib */; };
+		2124BB871BA7AB1C00720546 /* DialogManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124BB861BA7AB1C00720546 /* DialogManage.m */; };
+		2124BB8C1BA7ACE700720546 /* DialogOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2124BB8A1BA7ACE700720546 /* DialogOneCell.m */; };
+		2124BB8D1BA7ACE700720546 /* DialogOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2124BB8B1BA7ACE700720546 /* DialogOneCell.xib */; };
 		2173C20C1BA263820029E00A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20B1BA263820029E00A /* BaseViewController.m */; };
 		2173C2101BA263AE0029E00A /* HttpManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20F1BA263AE0029E00A /* HttpManage.m */; };
 		2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2121BA2652E0029E00A /* WelComeViewController.m */; };
@@ -73,6 +78,14 @@
 		2117B6671BA25B760082F0EF /* PocketIndianaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketIndianaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2117B66C1BA25B760082F0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2117B66D1BA25B760082F0EF /* PocketIndianaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketIndianaTests.m; sourceTree = "<group>"; };
+		2124BB801BA7AA6B00720546 /* DialogOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogOne.h; sourceTree = "<group>"; };
+		2124BB811BA7AA6B00720546 /* DialogOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogOne.m; sourceTree = "<group>"; };
+		2124BB831BA7AA7600720546 /* DialogOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogOne.xib; sourceTree = "<group>"; };
+		2124BB851BA7AB1C00720546 /* DialogManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogManage.h; sourceTree = "<group>"; };
+		2124BB861BA7AB1C00720546 /* DialogManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogManage.m; sourceTree = "<group>"; };
+		2124BB891BA7ACE700720546 /* DialogOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogOneCell.h; sourceTree = "<group>"; };
+		2124BB8A1BA7ACE700720546 /* DialogOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogOneCell.m; sourceTree = "<group>"; };
+		2124BB8B1BA7ACE700720546 /* DialogOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogOneCell.xib; sourceTree = "<group>"; };
 		2173C2091BA263440029E00A /* PCHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCHead.h; sourceTree = "<group>"; };
 		2173C20A1BA263820029E00A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2173C20B1BA263820029E00A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -237,9 +250,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2124BB7F1BA7AA2A00720546 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				2124BB801BA7AA6B00720546 /* DialogOne.h */,
+				2124BB811BA7AA6B00720546 /* DialogOne.m */,
+				2124BB831BA7AA7600720546 /* DialogOne.xib */,
+			);
+			name = DialogView;
+			sourceTree = "<group>";
+		};
+		2124BB881BA7ACC500720546 /* DialogCell */ = {
+			isa = PBXGroup;
+			children = (
+				2124BB891BA7ACE700720546 /* DialogOneCell.h */,
+				2124BB8A1BA7ACE700720546 /* DialogOneCell.m */,
+				2124BB8B1BA7ACE700720546 /* DialogOneCell.xib */,
+			);
+			name = DialogCell;
+			sourceTree = "<group>";
+		};
 		2173C2041BA262F70029E00A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2124BB881BA7ACC500720546 /* DialogCell */,
 				218446C01BA6BB8100D79894 /* UserCenterCell */,
 				2173C23A1BA286B80029E00A /* TabOneCell.h */,
 				2173C23B1BA286B80029E00A /* TabOneCell.m */,
@@ -281,6 +315,8 @@
 		2173C2071BA262F80029E00A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2124BB851BA7AB1C00720546 /* DialogManage.h */,
+				2124BB861BA7AB1C00720546 /* DialogManage.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -288,6 +324,7 @@
 		2173C2081BA262F80029E00A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2124BB7F1BA7AA2A00720546 /* DialogView */,
 				2173C2141BA2655F0029E00A /* WelcomeView */,
 				2173C21A1BA26D5B0029E00A /* TabViews.h */,
 				2173C21B1BA26D5B0029E00A /* TabViews.m */,
@@ -474,9 +511,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2124BB841BA7AA7600720546 /* DialogOne.xib in Resources */,
 				2117B65D1BA25B760082F0EF /* Main.storyboard in Resources */,
 				2117B6621BA25B760082F0EF /* LaunchScreen.xib in Resources */,
 				2117B65F1BA25B760082F0EF /* Images.xcassets in Resources */,
+				2124BB8D1BA7ACE700720546 /* DialogOneCell.xib in Resources */,
 				2173C2191BA265870029E00A /* WelComeViews.xib in Resources */,
 				2173C21E1BA26D660029E00A /* TabViews.xib in Resources */,
 				218446BC1BA66ED900D79894 /* HeadDetailView.xib in Resources */,
@@ -546,6 +585,7 @@
 				2173C21C1BA26D5B0029E00A /* TabViews.m in Sources */,
 				2173C27F1BA2C4B30029E00A /* TabThreeCell.m in Sources */,
 				2117B6571BA25B760082F0EF /* AppDelegate.m in Sources */,
+				2124BB8C1BA7ACE700720546 /* DialogOneCell.m in Sources */,
 				2173C2271BA27F140029E00A /* TabOneViewController.m in Sources */,
 				218446AF1BA651FB00D79894 /* ProductDetailsController.m in Sources */,
 				84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */,
@@ -555,11 +595,13 @@
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,
 				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
 				218446CC1BA6CD5A00D79894 /* PastAnnouncedCell.m in Sources */,
+				2124BB871BA7AB1C00720546 /* DialogManage.m in Sources */,
 				218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */,
 				84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */,
 				2173C22D1BA27F230029E00A /* TabThreeViewController.m in Sources */,
 				218446B21BA656A600D79894 /* ProductDetailsCell.m in Sources */,
 				2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */,
+				2124BB821BA7AA6B00720546 /* DialogOne.m in Sources */,
 				2117B6541BA25B760082F0EF /* main.m in Sources */,
 				2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */,
 				2173C22A1BA27F1C0029E00A /* TabTwoViewController.m in Sources */,

@@ -11,6 +11,7 @@
 #import "ProductDetailsCell.h"
 #import "CycleScrollView.h"
 #import "MainViewController.h"
+#import "DialogManage.h"
 
 @interface ProductDetailsController (){
     BOOL is_select;
@@ -246,6 +247,22 @@
 
 }
 
+//collecttiondelegate
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat width = (BOUNDS.width - (18*2 + 3 * 10))/4;
+    return CGSizeMake(width, width*0.66);
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    DialogOneCell *cell = (DialogOneCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"DialogOneCell" forIndexPath:indexPath];
+    
+    return cell;
+}
+
 
 /*
 #pragma mark - Navigation
@@ -261,7 +278,7 @@
     [self performSegueWithIdentifier:@"userCenter" sender:nil];
 }
 - (IBAction)lookuserjoinOnclick:(id)sender {
-    
+    [DialogManage showDialogOne:self datasorce:self];
 }
 - (IBAction)detailOnclic:(id)sender {
     
