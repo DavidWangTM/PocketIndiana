@@ -9,6 +9,7 @@
 #import "UserCenterViewController.h"
 #import "CenterOneCell.h"
 #import "CenterTwoCell.h"
+#import "CenterThreeCell.h"
 
 @interface UserCenterViewController (){
     UILabel *numlab;
@@ -81,19 +82,16 @@
 
 //tableview delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (type_index == 2) {
-        return 0;
-    }
     return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (type_index == 0) {
         return 145;
-    }else if (type_index == 1 || type_index == 2){
+    }else if (type_index == 1){
         return 130;
     }
-    return 145;
+    return 146;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -102,9 +100,14 @@
         CenterOneCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         
         return cell;
-    }else if (type_index == 1 || type_index == 2) {
+    }else if (type_index == 1) {
         static NSString *identifier = @"CenterTwoCell";
         CenterTwoCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        
+        return cell;
+    }else if (type_index == 2){
+        static NSString *identifier = @"CenterThreeCell";
+        CenterThreeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         
         return cell;
     }
@@ -135,7 +138,7 @@
 
 - (IBAction)threeOnclick:(id)sender {
     [self moveLine:2];
-    _showTS.hidden = NO;
+    _showTS.hidden = YES;
 }
 
 

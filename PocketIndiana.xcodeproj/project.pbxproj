@@ -50,6 +50,7 @@
 		6E6D80D22C2FE1B556796AC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855819ADE344F580CA051856 /* libPods.a */; };
 		842C72631BA2FDE100A07D2F /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72621BA2FDE100A07D2F /* FourModel.m */; };
 		842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C72681BA3100300A07D2F /* TabFiveCell.m */; };
+		848CCB021BA98394004DDE44 /* CenterThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848CCB011BA98394004DDE44 /* CenterThreeCell.m */; };
 		84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC34F31BA5449900AEA39D /* MoreViewController.m */; };
 		84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D911BA43B3700EDA9FE /* LoginViewController.m */; };
 		84CF6D951BA43EB600EDA9FE /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF6D941BA43EB600EDA9FE /* RegistViewController.m */; };
@@ -146,6 +147,8 @@
 		842C72621BA2FDE100A07D2F /* FourModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourModel.m; sourceTree = "<group>"; };
 		842C72671BA3100300A07D2F /* TabFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabFiveCell.h; sourceTree = "<group>"; };
 		842C72681BA3100300A07D2F /* TabFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabFiveCell.m; sourceTree = "<group>"; };
+		848CCB001BA98394004DDE44 /* CenterThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterThreeCell.h; sourceTree = "<group>"; };
+		848CCB011BA98394004DDE44 /* CenterThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterThreeCell.m; sourceTree = "<group>"; };
 		84CC34F21BA5449900AEA39D /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		84CC34F31BA5449900AEA39D /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		84CF6D901BA43B3700EDA9FE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -377,6 +380,8 @@
 				218446C21BA6BB9600D79894 /* CenterOneCell.m */,
 				218446C41BA6BBA000D79894 /* CenterTwoCell.h */,
 				218446C51BA6BBA000D79894 /* CenterTwoCell.m */,
+				848CCB001BA98394004DDE44 /* CenterThreeCell.h */,
+				848CCB011BA98394004DDE44 /* CenterThreeCell.m */,
 			);
 			name = UserCenterCell;
 			sourceTree = "<group>";
@@ -571,6 +576,7 @@
 			files = (
 				218446C61BA6BBA000D79894 /* CenterTwoCell.m in Sources */,
 				2173C23C1BA286B80029E00A /* TabOneCell.m in Sources */,
+				848CCB021BA98394004DDE44 /* CenterThreeCell.m in Sources */,
 				84CF6D921BA43B3700EDA9FE /* LoginViewController.m in Sources */,
 				842C72631BA2FDE100A07D2F /* FourModel.m in Sources */,
 				2173C20C1BA263820029E00A /* BaseViewController.m in Sources */,
