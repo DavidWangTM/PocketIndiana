@@ -10,4 +10,5 @@
 
 @interface CenterThreeCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIView *cellView;
 @end

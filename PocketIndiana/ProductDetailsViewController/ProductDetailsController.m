@@ -37,6 +37,9 @@
 -(void)AddTapView{
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pacOnclick)];
     [_pacView addGestureRecognizer:tap];
+    
+    UITapGestureRecognizer *tap1 =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goodssunOnclick)];
+    [_goodssunView addGestureRecognizer:tap1];
 }
 
 -(void)AddRight{
@@ -71,6 +74,7 @@
 -(void)initView{
     is_select = NO;
     _proView.layer.cornerRadius = 3.0;
+    _proView.clipsToBounds = YES;
     _showproView.layer.cornerRadius = 3.0;
     _userImageView.layer.cornerRadius = 25.0;
     _userImageView.clipsToBounds = YES;
@@ -297,10 +301,15 @@
     
 }
 - (IBAction)luckyOnclick:(id)sender {
-    
+    [self performSegueWithIdentifier:@"calculation" sender:nil];
 }
 
 -(void)pacOnclick{
     [self performSegueWithIdentifier:@"pac" sender:nil];
 }
+
+-(void)goodssunOnclick{
+    [self performSegueWithIdentifier:@"goodssun" sender:nil];
+}
+
 @end
