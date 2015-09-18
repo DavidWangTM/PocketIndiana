@@ -25,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     data = [NSMutableArray new];
+     [[IQKeyboardManager sharedManager] setEnable:NO];
+    
     //增加监听，当键盘出现或改变时收出消息
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
@@ -159,7 +161,7 @@
     FourModel *info = [data objectAtIndex:index];
     NSInteger num = [textField.text integerValue];
     info.num = num;
-    textField.text = [NSString stringWithFormat:@"%ld",num];
+    textField.text = [NSString stringWithFormat:@"%d",num];
     if (index == data.count - 1) {
         [_tableView setContentOffset:CGPointMake(0,mr_y) animated:YES];
     }

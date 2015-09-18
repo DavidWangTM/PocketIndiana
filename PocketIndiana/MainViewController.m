@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "TabViews.h"
 
+
 @interface MainViewController ()<TabDelegate>{
     TabViews *tabview;
     UIBarButtonItem *left;
@@ -25,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     CGRect rect = self.tabBar.frame;
     [self.tabBar removeFromSuperview];
     tabview = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TabViews class]) owner:nil options:nil] lastObject];
@@ -65,6 +67,8 @@
     [labview addSubview:titlelab];
     [self OnClickNum:0];
     [self addNSNotification];
+    
+    self.tabBarItem.badgeValue = @"10";
 }
 
 -(void)addNSNotification{

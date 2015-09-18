@@ -13,6 +13,8 @@
 #import <POP/POP.h>
 #import "SVProgressHUD.h"
 #import <Mantle/Mantle.h>
+#import "IQKeyboardManager.h"
+#import "IQKeyboardReturnKeyHandler.h"
 
 #define CompressionNum 0.5
 
@@ -49,5 +51,5 @@
 #define is_wx ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://://"]])
 #define is_sina ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"sinaweibo://"]])
 
-//#define URL @"http://v7.worker.meijiabang.net"
+//#define URL @""
 

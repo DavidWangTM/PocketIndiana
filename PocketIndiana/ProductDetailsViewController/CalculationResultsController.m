@@ -27,7 +27,7 @@
 -(void)addRightView{
     UIButton *fivebtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 12, 60, 20)];
     [fivebtn setTitle:@"计算方式" forState:UIControlStateNormal];
-    fivebtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    fivebtn.titleLabel.font = [UIFont systemFontOfSize:12];
     [fivebtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [fivebtn setBackgroundColor:[UIColor whiteColor]];
     fivebtn.layer.cornerRadius = 5.0;

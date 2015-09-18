@@ -11,6 +11,8 @@
 
 @interface TabFiveViewController (){
     NSArray *data;
+    NSArray *seguedata;
+    BOOL is_login;
 }
 
 @end
@@ -43,6 +45,7 @@
 
 -(void)ChangeUserData{
     data = @[@"抢单记录",@"中奖记录",@"晒单记录",@"充值记录",@"推广",@"收货地址",@"物流发放",@"客服咨询",@"意见反馈"];
+    seguedata = @[@"grabsingle",@"winning",@"sunsingle",@"recharge",@"spread",@"shippingaddress",@"",@"",@""];
     _userView.hidden = NO;
     _loginView.hidden = YES;
 }
@@ -72,7 +75,12 @@
 #pragma mark <UICollectionViewDelegate>
 // 选中某个cell
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (!_loginView.hidden) {
+        [self performSegueWithIdentifier:@"login" sender:nil];
+        return;
+    }
+    NSInteger index = indexPath.row;
+    [self performSegueWithIdentifier:[seguedata objectAtIndex:index] sender:nil];
 }
 
 /*

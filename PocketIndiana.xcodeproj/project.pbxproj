@@ -24,6 +24,12 @@
 		213384EA1BAA98B400D97E7D /* CalculationOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 213384E91BAA98B400D97E7D /* CalculationOneCell.m */; };
 		213384ED1BAA98C100D97E7D /* CalculationTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 213384EC1BAA98C100D97E7D /* CalculationTwoCell.m */; };
 		213384F01BAA98CB00D97E7D /* CalculationThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 213384EF1BAA98CB00D97E7D /* CalculationThreeCell.m */; };
+		213C71A11BABDA8D0088FE67 /* GrabSingleRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71A01BABDA8D0088FE67 /* GrabSingleRecordController.m */; };
+		213C71A41BABDE600088FE67 /* WinningRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71A31BABDE600088FE67 /* WinningRecordController.m */; };
+		213C71A71BABE0D40088FE67 /* SunSingleRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71A61BABE0D40088FE67 /* SunSingleRecordController.m */; };
+		213C71AA1BABE3010088FE67 /* RechargeRecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71A91BABE3010088FE67 /* RechargeRecordController.m */; };
+		213C71AD1BABE4550088FE67 /* SpreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71AC1BABE4550088FE67 /* SpreadViewController.m */; };
+		213C71B01BABE49B0088FE67 /* ShippingAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C71AF1BABE49B0088FE67 /* ShippingAddressController.m */; };
 		2173C20C1BA263820029E00A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20B1BA263820029E00A /* BaseViewController.m */; };
 		2173C2101BA263AE0029E00A /* HttpManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C20F1BA263AE0029E00A /* HttpManage.m */; };
 		2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173C2121BA2652E0029E00A /* WelComeViewController.m */; };
@@ -105,6 +111,18 @@
 		213384EC1BAA98C100D97E7D /* CalculationTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationTwoCell.m; sourceTree = "<group>"; };
 		213384EE1BAA98CB00D97E7D /* CalculationThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationThreeCell.h; sourceTree = "<group>"; };
 		213384EF1BAA98CB00D97E7D /* CalculationThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationThreeCell.m; sourceTree = "<group>"; };
+		213C719F1BABDA8D0088FE67 /* GrabSingleRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrabSingleRecordController.h; sourceTree = "<group>"; };
+		213C71A01BABDA8D0088FE67 /* GrabSingleRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrabSingleRecordController.m; sourceTree = "<group>"; };
+		213C71A21BABDE600088FE67 /* WinningRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningRecordController.h; sourceTree = "<group>"; };
+		213C71A31BABDE600088FE67 /* WinningRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningRecordController.m; sourceTree = "<group>"; };
+		213C71A51BABE0D40088FE67 /* SunSingleRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunSingleRecordController.h; sourceTree = "<group>"; };
+		213C71A61BABE0D40088FE67 /* SunSingleRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunSingleRecordController.m; sourceTree = "<group>"; };
+		213C71A81BABE3010088FE67 /* RechargeRecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeRecordController.h; sourceTree = "<group>"; };
+		213C71A91BABE3010088FE67 /* RechargeRecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeRecordController.m; sourceTree = "<group>"; };
+		213C71AB1BABE4550088FE67 /* SpreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadViewController.h; sourceTree = "<group>"; };
+		213C71AC1BABE4550088FE67 /* SpreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadViewController.m; sourceTree = "<group>"; };
+		213C71AE1BABE49B0088FE67 /* ShippingAddressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingAddressController.h; sourceTree = "<group>"; };
+		213C71AF1BABE49B0088FE67 /* ShippingAddressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingAddressController.m; sourceTree = "<group>"; };
 		2173C2091BA263440029E00A /* PCHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCHead.h; sourceTree = "<group>"; };
 		2173C20A1BA263820029E00A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2173C20B1BA263820029E00A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -460,6 +478,18 @@
 				84CF6D941BA43EB600EDA9FE /* RegistViewController.m */,
 				218446BD1BA6B34B00D79894 /* UserCenterViewController.h */,
 				218446BE1BA6B34B00D79894 /* UserCenterViewController.m */,
+				213C719F1BABDA8D0088FE67 /* GrabSingleRecordController.h */,
+				213C71A01BABDA8D0088FE67 /* GrabSingleRecordController.m */,
+				213C71A21BABDE600088FE67 /* WinningRecordController.h */,
+				213C71A31BABDE600088FE67 /* WinningRecordController.m */,
+				213C71A51BABE0D40088FE67 /* SunSingleRecordController.h */,
+				213C71A61BABE0D40088FE67 /* SunSingleRecordController.m */,
+				213C71A81BABE3010088FE67 /* RechargeRecordController.h */,
+				213C71A91BABE3010088FE67 /* RechargeRecordController.m */,
+				213C71AB1BABE4550088FE67 /* SpreadViewController.h */,
+				213C71AC1BABE4550088FE67 /* SpreadViewController.m */,
+				213C71AE1BABE49B0088FE67 /* ShippingAddressController.h */,
+				213C71AF1BABE49B0088FE67 /* ShippingAddressController.m */,
 			);
 			path = UserViewController;
 			sourceTree = "<group>";
@@ -640,11 +670,16 @@
 				213384ED1BAA98C100D97E7D /* CalculationTwoCell.m in Sources */,
 				218446C31BA6BB9600D79894 /* CenterOneCell.m in Sources */,
 				2173C23F1BA2B64A0029E00A /* TabTwoMenuCell.m in Sources */,
+				213C71A41BABDE600088FE67 /* WinningRecordController.m in Sources */,
 				2173C2331BA27F350029E00A /* TabFiveViewController.m in Sources */,
+				213C71AA1BABE3010088FE67 /* RechargeRecordController.m in Sources */,
+				213C71AD1BABE4550088FE67 /* SpreadViewController.m in Sources */,
 				842C72691BA3100300A07D2F /* TabFiveCell.m in Sources */,
 				2173C2381BA2810E0029E00A /* CycleScrollView.m in Sources */,
 				218446CC1BA6CD5A00D79894 /* PastAnnouncedCell.m in Sources */,
+				213C71A11BABDA8D0088FE67 /* GrabSingleRecordController.m in Sources */,
 				213384E31BAA6D3600D97E7D /* GoodsSunDeatilController.m in Sources */,
+				213C71B01BABE49B0088FE67 /* ShippingAddressController.m in Sources */,
 				2124BB871BA7AB1C00720546 /* DialogManage.m in Sources */,
 				218446BF1BA6B34B00D79894 /* UserCenterViewController.m in Sources */,
 				84CC34F41BA5449900AEA39D /* MoreViewController.m in Sources */,
@@ -653,6 +688,7 @@
 				2173C2301BA27F2C0029E00A /* TabFourViewController.m in Sources */,
 				2124BB821BA7AA6B00720546 /* DialogOne.m in Sources */,
 				2117B6541BA25B760082F0EF /* main.m in Sources */,
+				213C71A71BABE0D40088FE67 /* SunSingleRecordController.m in Sources */,
 				2173C2131BA2652E0029E00A /* WelComeViewController.m in Sources */,
 				2173C22A1BA27F1C0029E00A /* TabTwoViewController.m in Sources */,
 			);
