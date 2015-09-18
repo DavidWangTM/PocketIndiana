@@ -19,6 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showTitle:@"收货地址"];
+    
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,7 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-   
+    [[IQKeyboardManager sharedManager] setToolbarManageBehaviour:IQAutoToolbarByPosition];
+    
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:NO];
+    
     [SVProgressHUD setBackgroundColor:[[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.7]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     
