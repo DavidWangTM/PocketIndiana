@@ -15,6 +15,8 @@
     NSMutableArray *data;
     NSInteger maxnum;
     CGFloat mr_y;
+    NSInteger index_row;
+    BOOL is_show;
 }
 
 @end
@@ -38,6 +40,8 @@
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
     [self initData];
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -50,6 +54,7 @@
         model.num = 10 + i;
         [data addObject:model];
     }
+   
     [_tableView reloadData];
     [self RefreshData];
 }
@@ -79,9 +84,12 @@
     cell.model = model;
     cell.index = indexPath.row;
     cell.delegate = self;
-        
     return cell;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.view endEditing:YES];
 }
 
 -(void)removeBack:(NSInteger)index{
@@ -129,9 +137,12 @@
     NSValue *aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect keyboardRect = [aValue CGRectValue];
     int height = keyboardRect.size.height;
-    [UIView animateWithDuration:0.3 animations:^{
-        _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y - height - _bottomView.frame.size.height, _bottomView.frame.size.width, _bottomView.frame.size.height);
-    }];
+    if (!is_show) {
+        [UIView animateWithDuration:0.3 animations:^{
+            _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y - height - _bottomView.frame.size.height, _bottomView.frame.size.width, _bottomView.frame.size.height);
+        }];
+    }
+    is_show = YES;
 }
 
 //当键退出时调用
@@ -140,18 +151,19 @@
     [UIView animateWithDuration:0.3 animations:^{
         _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, self.view.frame.size.height, _bottomView.frame.size.width, _bottomView.frame.size.height);
     }];
+    is_show = NO;
 }
 
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    NSInteger index = textField.tag - 100;
-    NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    index_row = textField.tag - 100;
+    NSIndexPath *scrollIndexPath = [NSIndexPath indexPathForRow:index_row inSection:0];
     [_tableView scrollToRowAtIndexPath:scrollIndexPath
                       atScrollPosition:UITableViewScrollPositionTop animated:YES];
-    if (index == data.count - 1) {
-        mr_y =_tableView.contentOffset.y;
-        [_tableView setContentOffset:CGPointMake(0,(index - 1)*170) animated:YES];
-    }
+//    if (index_row >= data.count - 2) {
+//        mr_y =_tableView.contentOffset.y;
+//        [_tableView setContentOffset:CGPointMake(0,(data.count - 2)*86) animated:YES];
+//    }
     return YES;
 }
 
@@ -160,10 +172,10 @@
     FourModel *info = [data objectAtIndex:index];
     NSInteger num = [textField.text integerValue];
     info.num = num;
-    textField.text = [NSString stringWithFormat:@"%d",num];
-    if (index == data.count - 1) {
-        [_tableView setContentOffset:CGPointMake(0,mr_y) animated:YES];
-    }
+    textField.text = [NSString stringWithFormat:@"%ld",num];
+//    if (index >= data.count - 2) {
+//        [_tableView setContentOffset:CGPointMake(0,mr_y) animated:YES];
+//    }
     [self RefreshData];
 }
 
@@ -175,6 +187,23 @@
 - (IBAction)moveOnclick:(id)sender {
     MainViewController *main = (MainViewController *)self.tabBarController;
     [main MainselectNum:0];
+}
+
+- (IBAction)leftOnclick:(id)sender {
+    if (index_row > 0) {
+        index_row -= 1;
+        UITextField *textfield = (UITextField *)[self.view viewWithTag:(index_row + 100)];
+        [textfield becomeFirstResponder];
+    }
+    
+}
+
+- (IBAction)rightOnclick:(id)sender {
+    if (index_row < [data count] - 1) {
+        index_row += 1;
+        UITextField *textfield = (UITextField *)[self.view viewWithTag:(index_row + 100)];
+        [textfield becomeFirstResponder];
+    }
 }
 
 @end

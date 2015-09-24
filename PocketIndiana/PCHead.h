@@ -13,8 +13,8 @@
 #import <POP/POP.h>
 #import "SVProgressHUD.h"
 #import <Mantle/Mantle.h>
-#import "IQKeyboardManager.h"
-#import "IQKeyboardReturnKeyHandler.h"
+//#import "IQKeyboardManager.h"
+//#import "IQKeyboardReturnKeyHandler.h"
 
 #define CompressionNum 0.5
 

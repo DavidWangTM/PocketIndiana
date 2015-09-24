@@ -20,7 +20,6 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - IQKeyboardManager (3.3.1)
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
@@ -33,7 +32,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
-  - IQKeyboardManager
   - Mantle (~> 2.0.2)
   - MJRefresh
   - pop (~> 1.0)
@@ -42,7 +40,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
-  IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   MJRefresh: e52328552ed9cbfce3501e3820b18bf7643c65cc
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57

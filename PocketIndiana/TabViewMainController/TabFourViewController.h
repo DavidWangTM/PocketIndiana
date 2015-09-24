@@ -19,4 +19,8 @@
 - (IBAction)editsureOnclick:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 - (IBAction)moveOnclick:(id)sender;
+
+- (IBAction)leftOnclick:(id)sender;
+- (IBAction)rightOnclick:(id)sender;
+
 @end
